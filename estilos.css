@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Roboto&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.menu .logo{
+	color: white;
+	font-size: 25px;
+	line-height: 70px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+.menu ul{
+	float: right;
+	margin-right: 10px;
+}
+.menu ul li{
+	display: inline-block;
+	margin: 30px 15px;
+}
+.menu ul li a{
+	font-size: 16px;
+	padding: 8px 6px;
+	text-decoration: none;
+	color: white;
+}
+.menu{
+	background-color: black;
+}
+.menu ul li a:hover{
+	font-size: 25px;
+	background-color: yellow;
+	color: black;
+	border-radius: 5px;
+	transition: 0.5s;
+	box-shadow: 3px 3px 2px skyblue;
+}
+.cerrar{
+	display: none;
+}
+/*BANNER*/
+.banner{
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	background: url('Imagenes/WebHosting.png')no-repeat center center/cover;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+
+}
+.banner .texto_banner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	min-width: 40%;
+	min-height: 40%;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .texto_banner h1,
+.banner .texto_banner p{
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+/*Quienes somos*/
+.nosotros{
+	padding: 10px 100px;
+	text-align: center;
+	margin: 40px 0;
+}
+.titulo{
+	font-family: 'Amaranth', sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	font-size: 33px;
+	text-align: center;
+}
+.linea{
+	width: 200px;
+	height: 6px;
+	background-color: #00857A;
+	margin: 10px auto;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.boton{
+	background-color: #00857A;
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 40px auto;
+	border-radius: 10px;
+	text-decoration: none;
+	line-height: 15px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bolder;
+	color: white;
+	margin-bottom: 20px;
+}
+.boton:hover{
+	background-color: #00453F;
+	box-shadow: 5px 5px 5px gray;
+}
+/*NUESTROS SERVICIOS*/
+.servicios{
+	margin: 50px 70px;
+}
+.servicios .contenido{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+}
+.imagen img{
+	width: 90%;
+	height: 250px;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: block;
+}
+.imagen p{
+	text-align: center;
+	font-weight: bolder;
+	margin: 20px 0;
+}
+/*REDES SOCIALES*/
+.redes{
+	background-color: white;
+	color: white;
+	height: 150px;
+	text-align: center;
+	padding: 20px;
+}
+.espacio{
+	margin: 20px;
+}
+@media(max-width: 850px){
+     .servicios .contenido{
+     	grid-template-columns: auto auto;
+     }
+}
+@media(max-width: 550px){
+    .servicios .contenido{
+    	grid-template-columns: auto;
+    }
+}
+@media(max-width: 845px){
+	.hamburguesa{
+		width: 30px;
+		position: absolute;
+		top: 40px;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+	.hamburguesa span{
+		margin-bottom: 3px;
+		background-color: white;
+		display: block;
+		height: 3px;
+		margin-left: 10px;
+	}
+	.menu .logo{
+		margin-left: 50px;
+	}
+	.menu{
+		position: relative;
+	}
+	nav ul{
+		float: none;
+		width: 300px;
+		padding: 0;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		background-color: black;
+		margin: 0;
+		padding-top: 60px;
+		transition: 1s;
+		display: none;
+		z-index: 2;
+	}
+	.menu ul li{
+		display: block;
+		float: none;
+	}
+	.menu ul li{
+		font-size: 18px;
+		padding: 10px 40px;
+	}
+	.cerrar{
+		display: block;
+		position : absolute;
+		width : 50px;
+		height: 50px;
+		right: 10px;
+		top: 15px;
+		color: skyblue;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.abrir{
+		display: block;
+	}
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Roboto:wght@100;400;900&display=swap');
+body {
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background: aliceblue;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: aliceblue;
+    border-radius: 8px;
+   
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+p, ul {
+    margin: 0;
+    color: blue;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Roboto:wght@100;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+    padding: 10px;
+}
+
+.serviciosw {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
+h2 {
+    color: red;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Roboto:wght@100;400;900&display=swap');
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background-color: aliceblue;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+header input[type="text"] {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 600px;
+    margin: 0.5rem auto;
+    display: block;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    color: black;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.event {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: calc(33% - 2rem);
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-image {
+    position: relative;
+}
+
+.event-image img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: #fff;
+    padding: 5px;
+    font-size: 0.8rem;
+
+    @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Roboto:wght@100;400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegúrate de que el HTML y el body ocupen toda la altura de la ventana */
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.contact-info {
+    max-width: 45%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contact-info a {
+    color: #0044cc;
+    text-decoration: none;
